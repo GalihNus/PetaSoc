@@ -8,21 +8,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="p-4 bg-blue-600 text-white text-xl font-bold text-center">
+  <div class="header">
     Peta Interaktif Bandara Adi Soemarmo
   </div>
 
-  <div class="p-4 flex flex-col space-y-2 bg-white md:flex-row md:space-y-0 md:space-x-4 overflow-x-auto">
-    <button class="bg-green-500 text-white p-2 rounded" onclick="showMyLocation()">Lokasi Saya Sekarang</button>
+  <div class="controls">
+    <button onclick="showMyLocation()">Lokasi Saya Sekarang</button>
 
-    <select id="destinationSelect" class="p-2 border rounded">
+    <select id="destinationSelect">
       <option value="">Pilih Tujuan</option>
       <option value="toilet">Toilet</option>
       <option value="gate">Gate Keberangkatan</option>
       <option value="lounge">Ruang Tunggu</option>
     </select>
 
-    <button class="bg-blue-500 text-white p-2 rounded" onclick="showRoute()">Tunjukkan Jalan</button>
+    <button onclick="showRoute()">Tunjukkan Jalan</button>
   </div>
 
   <div id="map"></div>
